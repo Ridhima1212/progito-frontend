@@ -126,7 +126,7 @@ export default function App() {
     setError(null);
 
     try {
-      const response = await fetch('http://localhost:5000/evaluate', {
+      const response = await fetch('https://projito-backend-xyz.onrender.com/evaluate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ github_url: githubUrl, description }),
